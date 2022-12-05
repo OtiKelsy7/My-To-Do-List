@@ -9,6 +9,10 @@ addButton.addEventListener("click", () => {
     ulEl.innerHTML += `
       <li>${inputEl.value}</li>
       <i class="fa" aria-hidden="true">&#xf044;</i>
+      <i class="fa fa-trash" aria-hidden="true"></i>
     `
     inputEl.value = "";
 })
+
+display.classList.add("edit")
+display.classList.add("del")
