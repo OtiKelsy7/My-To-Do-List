@@ -68,13 +68,23 @@ body {
     grid-template-columns: minmax(1fr, 15px);
 }
 
-#ul-el li{
+#cont li{
    list-style: none; 
+   margin-left: 1em;
+   margin-top: 10px;
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    color: darkslategrey;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
 .fa {
-    /* color: black; */
     cursor: pointer;
+    margin-left: 1em;
 }
 
 .edit .del {

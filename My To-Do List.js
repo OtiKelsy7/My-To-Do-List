@@ -1,18 +1,14 @@
-//initial reference
-const inputEl = document.querySelector("#input-field");
-const addButton = document.querySelector("#btn");
-const display = document.querySelector("#display-div");
-const ulEl = document.querySelector("#ul-el");
+//initial references
+const listItem = document.getElementById("cont");
+const inputField = document.getElementById("input-field");
+const addBtn  = document.getElementById("btn");
 
-//adding event listeners to othe add button
-addButton.addEventListener("click", () => {
-    ulEl.innerHTML += `
-      <li>${inputEl.value}</li>
-      <i class="fa" aria-hidden="true">&#xf044;</i>
-      <i class="fa fa-trash" aria-hidden="true"></i>
+//button event listener
+addBtn.addEventListener("click", () => {
+    listItem.innerHTML += `
+     <li>${inputField.value}</li>
+     <hr/>
     `
-    inputEl.value = "";
-})
 
-display.classList.add("edit")
-display.classList.add("del")
+    inputField.value = "";
+})
