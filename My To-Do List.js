@@ -1,5 +1,5 @@
 //initial references
-const listItem = document.getElementById("cont");
+const listItem = document.getElementById("list-cont");
 const inputField = document.getElementById("input-field");
 const addBtn  = document.getElementById("btn");
 
