@@ -1,14 +1,30 @@
 //initial references
-const listItem = document.getElementById("list-cont");
 const inputField = document.getElementById("input-field");
-const addBtn  = document.getElementById("btn");
+const addBtn = document.getElementById("btn");
+const ulEl = document.getElementById("list-cont");
 
-//button event listener
+//functionalities
+//add button eventListener
 addBtn.addEventListener("click", () => {
-    listItem.innerHTML += `
-     <li>${inputField.value}</li>
-     <hr/>
-    `
-
-    inputField.value = "";
+    if(!inputField.value) {
+       alert("please add a task")
+    } else {
+      ulEl.innerHTML += `
+      <li>${inputField.value}<button class="edit" onclick="edit()">edit</button><button class="delete" onclick="del(this)">delete</button>
+      </li>
+      `
+ 
+      //clearing the input field
+      inputField.value = "";
+    }
 })
+
+//edit button function
+function edit() {
+
+}
+
+//delete button function
+function del(item) {
+    item.closest("list-cont").remove()
+}

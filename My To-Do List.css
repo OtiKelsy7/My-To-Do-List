@@ -19,7 +19,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
+    max-width: 34em;
     height: 500px;
     background-color: #fff;
     display: flex;
@@ -38,7 +38,7 @@ body {
     width: 100px;
     height: 3em;
     padding: 10px 25px;
-    border-radius: 3em;
+    border-radius: 0.3em;
     border: none;
     outline: none;
     cursor: pointer;
@@ -68,7 +68,7 @@ body {
     grid-template-columns: minmax(1fr, 15px);
 }
 
-#cont li{
+#list-cont li{
    list-style: none; 
    margin-left: 1em;
    margin-top: 10px;
@@ -80,6 +80,7 @@ hr {
     color: darkslategrey;
     border-radius: 10px;
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 .fa {
@@ -87,6 +88,6 @@ hr {
     margin-left: 1em;
 }
 
-.edit .del {
+/* .edit .del {
     float: right;
-}
+} */
