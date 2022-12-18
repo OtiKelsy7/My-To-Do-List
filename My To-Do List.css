@@ -92,6 +92,8 @@ ul {
 button, .fa {
     cursor: pointer;
     margin-left: 1em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 /* .edit .del {

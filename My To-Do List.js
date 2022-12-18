@@ -10,7 +10,7 @@ addBtn.addEventListener("click", () => {
        alert("please add a task")
     } else {
       ulEl.innerHTML += `
-      <li>${inputField.value}<button class="edit" onclick="edit()"><i class="fa fa-pencil-square-o"></i></button><button class="delete" onclick="del(this)"><i class="fa fa-trash-o"></i></button>
+      <li>${inputField.value}<div class='iconDiv'><button class="edit" onclick="edit()"><i class="fa fa-pencil-square-o"></i></button><button class="delete" onclick="del()"><i class="fa fa-trash-o"></i></button></div>
       </li>
       `
  
@@ -25,6 +25,7 @@ function edit() {
 }
 
 //delete button function
-function del(item) {
-    item.closest("list-cont").remove()
+function del(e) {
+    e.closest("list-cont").remove()
 }
+
