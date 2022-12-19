@@ -10,7 +10,15 @@ addBtn.addEventListener("click", () => {
        alert("please add a task")
     } else {
       ulEl.innerHTML += `
-      <li>${inputField.value}<div class='iconDiv'><button class="edit" onclick="edit()"><i class="fa fa-pencil-square-o"></i></button><button class="delete" onclick="del()"><i class="fa fa-trash-o"></i></button></div>
+      <li>${inputField.value}
+       <div class='iconDiv'>
+        <button class="edit" onclick="edit()">
+         <i class="fa fa-pencil-square-o"></i>
+        </button>
+        <button class="delete" onclick="del()">
+         <i class="fa fa-trash-o"></i>
+        </button>
+       </div>
       </li>
       `
  
