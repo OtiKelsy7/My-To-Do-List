@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My TODO List App</title>
-    <link rel="stylesheet" href="My To-Do List.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome-icons/css/all.min.css">
 </head>
 <body>
+    <!-- container starts -->
     <div id="container">
-        <div class="innercontainer">
+
+        <!-- container for input and app description i.e My TODO List -->
+
+        <div class="inner-container">
+
             <h1>My TODO List</h1>
+
             <input type="text" id="input-field" placeholder="type in here">
+
+        <!-- button for adding subsequent tasks -->
+
             <button id="btn" class="add-button">Add</button>
+
         </div>
+        
+        <!-- a div for holding the task after a successful input and adding -->
+
         <div id="display-div">
-            <ul id="ul-el"><li><i class="fa" aria-hidden="true">&#xf044;</i></li></ul>
+            <ul id="list-cont"></ul>
         </div>
     </div>
-
-    <script src="My To-Do List.js"></script>
+    <!-- container ends -->
+    <!--<script src="jquery-3.6.0.min.js"></script>-->
+    <script src="script.js"></script>
 </body>
 </html>

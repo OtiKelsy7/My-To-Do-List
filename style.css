@@ -19,7 +19,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
+    min-width: 22em;
     height: 500px;
     background-color: #fff;
     display: flex;
@@ -28,7 +28,7 @@ body {
     border-radius: 2em;
 }
 
-.innercontainer h1{
+.inner-container h1{
     margin: 20px auto 10px;
     font-size: 500;
     font-weight: 500;
@@ -38,7 +38,7 @@ body {
     width: 100px;
     height: 3em;
     padding: 10px 25px;
-    border-radius: 3em;
+    border-radius: 0.3em;
     border: none;
     outline: none;
     cursor: pointer;
@@ -62,16 +62,40 @@ body {
     border-bottom: 2px solid black;   
 }
 
-#ul-el {
-    background-color: rgb(124, 114, 114);
-    width: 100px;
-    height: 100px;
+#display-div {
+    width: 300px;
 }
 
-ul, li, .fa {
-    width: 50px;  
-    height:50px;
-    background-color: red;
-    color: black;
-    cursor: pointer;
+#list-cont li{
+   list-style: none; 
+   margin-left: 1em;
+   margin-top: 10px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
 }
+
+hr {
+    width: 90%;
+    height: 1px;
+    color: darkslategrey;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+ul {
+   width: 300px;
+}
+
+
+button, .fa {
+    cursor: pointer;
+    margin-left: 1em;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/* .edit .del {
+    float: right;
+} */
