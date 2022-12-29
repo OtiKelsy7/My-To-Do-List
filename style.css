@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
     --primary-background: rgb(83, 7, 7);
-    --btn-color:turquoise;
+    --btn-color: rgb(21, 21, 226);;
 }
 * {
     margin: 0;
@@ -42,10 +42,12 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color:var(--btn-color) ;
+    background-color:var(--btn-color);
+    color: white;
     font-family: poppins, 'sans-serif';
-    font-size: 200;
-    font-weight: 500;
+    font-size: 400;
+    font-weight: 700;
+    letter-spacing: .1em;
 }
 
 #input-field {
