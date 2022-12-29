@@ -119,3 +119,10 @@ button, .fa {
     border: none;
     border-radius: 20%;
 }
+
+#input-area{
+    border: none;
+    outline: none;
+    color: black;
+    resize: none;
+}
