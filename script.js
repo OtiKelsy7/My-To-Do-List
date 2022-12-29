@@ -23,6 +23,7 @@ addBtn.addEventListener("click", () => {
         </button>
        </div>
       </li>
+      <hr>
       `
 
       //Calling the edit and delete function

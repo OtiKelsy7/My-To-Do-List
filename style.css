@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
     --primary-background: rgb(83, 7, 7);
-    --btn-color:turquoise;
+    --btn-color: rgb(21, 21, 226);;
 }
 * {
     margin: 0;
@@ -42,10 +42,12 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color:var(--btn-color) ;
+    background-color:var(--btn-color);
+    color: white;
     font-family: poppins, 'sans-serif';
-    font-size: 200;
-    font-weight: 500;
+    font-size: 400;
+    font-weight: 700;
+    letter-spacing: .1em;
 }
 
 #input-field {
@@ -64,6 +66,8 @@ body {
 
 #display-div {
     width: 300px;
+    align-items: center;
+    justify-content: center;
 }
 
 #list-cont li{
@@ -80,8 +84,8 @@ hr {
     height: 1px;
     color: darkslategrey;
     border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 7px;
+    margin-left: 15px;
 }
 
 ul {
@@ -96,13 +100,22 @@ button, .fa {
     height: 2.5em;
 }
 
-/* .edit .del {
-    float: right;
-} */
-
-#input-area{
+.delete {
+    box-sizing: content-box;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(241, 35, 35);
+    color: white;
     border: none;
-    outline: none;
-    color: black;
-    resize: none;
+    border-radius: 20%;
+}
+
+.edit {
+    box-sizing: content-box;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    border-radius: 20%;
 }
