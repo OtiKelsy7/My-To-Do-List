@@ -37,6 +37,7 @@ addBtn.addEventListener("click", () => {
         </button>
        </div>
       </li>
+      <hr>
       `
       
       //clearing the input field
