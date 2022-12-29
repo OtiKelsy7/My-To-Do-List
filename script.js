@@ -37,7 +37,7 @@ addBtn.addEventListener("click", () => {
  
 });
 
-edit();
+
 
 
 //edit button function
