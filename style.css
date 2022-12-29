@@ -99,3 +99,10 @@ button, .fa {
 /* .edit .del {
     float: right;
 } */
+
+#input-area{
+    border: none;
+    outline: none;
+    color: black;
+    resize: none;
+}
