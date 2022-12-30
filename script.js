@@ -48,7 +48,7 @@ function edit() {
   //Looping through all the edit buttons and assign each of them a click event
   for (let i of edit) {
     //Grab each element individually
-    i.addEventListener('click', ()=>{
+    i.addEventListener('click', ()=> {
       //Get the input element for editing
       let field = i.closest('li').querySelector('textarea');
       //Check if it's current state is editing or not
