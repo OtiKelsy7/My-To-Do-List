@@ -9,9 +9,8 @@ const ulEl = document.getElementById("list-cont");
 addBtn.addEventListener("click", () => {
 
   const task = inputField.value;
-     //This is a more better approach, no need for alert
      if (!task) {
-      return;
+      alert('please add a task');
       }
         
         //clearing the input field
@@ -62,7 +61,6 @@ addBtn.addEventListener("click", () => {
             //Edit the input
             field.removeAttribute('disabled');
             field.focus();
-            //console.log('open edit');
 
             //Check if it's the button or the icon that was clicked and address both clicks
             if (e.target.innerHTML !== ''){
@@ -71,7 +69,6 @@ addBtn.addEventListener("click", () => {
           }else{
             //Close the editing
             field.setAttribute('disabled', '');
-            //console.log('close edit');
 
             //Check for different element click
             if (e.target.innerHTML !== ''){
@@ -96,7 +93,6 @@ function del() {
   for (let i of del) {
     //Grab each element individually
     i.addEventListener('click', ()=>{
-          //console.log('deleted');
           //Delete the task
           i.closest('li').remove();
         });
