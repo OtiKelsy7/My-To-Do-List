@@ -73,7 +73,8 @@ body {
 #list-cont li{
    list-style: none; 
    margin-left: 1em;
-   margin-top: 10px;
+   border-bottom: 1px solid grey;
+   padding: .5em;
    width: 100%;
    display: flex;
    justify-content: space-between;
@@ -90,6 +91,7 @@ hr {
 
 ul {
    width: 300px;
+   padding-top: .5em;
 }
 
 
@@ -125,4 +127,13 @@ button, .fa {
     outline: none;
     color: black;
     resize: none;
+}
+
+#popCont{
+    background: grey;
+    padding: .1em .5em .1em .5em;
+    position: absolute;
+    bottom: -10px;
+    opacity: 0;
+    transition: .5s;
 }
