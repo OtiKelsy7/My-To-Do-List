@@ -127,6 +127,7 @@ button, .fa {
     outline: none;
     color: black;
     resize: none;
+    font-family: poppins, 'sans-serif';
 }
 
 #popCont{
