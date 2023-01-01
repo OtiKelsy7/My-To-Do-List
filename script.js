@@ -76,7 +76,9 @@ addBtn.addEventListener("click", () => {
             //Check for different element click
             if (e.target.innerHTML !== ''){
             e.target.querySelector('i').classList.replace("fa-check-square","fa-pen-square");
-            }else{e.target.classList.replace("fa-check-square","fa-pen-square")};
+            //Call the popup animation
+            pop_up();
+            }else{e.target.classList.replace("fa-check-square","fa-pen-square");pop_up()};
           }
         }, true);
 
@@ -101,4 +103,16 @@ function del() {
           i.closest('li').remove();
         });
       }
+}
+
+
+//function for popup
+function pop_up() {
+  let pop_up = document.querySelector('#popCont');
+  pop_up.style.opacity = '1';
+  pop_up.style.bottom = '100px';
+  setTimeout( ()=>{
+    pop_up.style.opacity = '0';
+    pop_up.style.bottom = '-10px';
+  }, 1500);
 }
